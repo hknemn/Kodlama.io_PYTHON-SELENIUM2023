@@ -1,2 +1,2 @@
-# Kodlama.io_PYTHON-SELENIUM-2023-
-Halit Enes Kalaycı Python&amp;Selenium Dersleri Uygulama Kodları
+# Kodlama.io - (2023) Yazılım Geliştirici Yetiştirme Kampı - Python&Selenium
+Halit Enes Kalaycı Python&Selenium Dersleri Uygulama Kodları ve Ödevleri
