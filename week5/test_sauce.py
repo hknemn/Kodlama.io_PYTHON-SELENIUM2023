@@ -1,13 +1,13 @@
 #odev2
 
-from selenium import webdriver
+from selenium.webdriver.support import expected_conditions as ec
+from selenium.webdriver.support.wait import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as ec
-import pytest
-from pathlib import Path
+from selenium import webdriver
 from datetime import date
+from pathlib import Path
+import pytest
 
 class Test_SauceDemo:
 
