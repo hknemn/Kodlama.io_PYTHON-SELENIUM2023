@@ -51,6 +51,8 @@ class Test_SauceDemo:
         self.passwordInput.send_keys(password)
         self.tryLogin()
         self.driver.save_screenshot(f"{self.folderPath}/test-invalid-login-{username}-{password}.png")
+        errorMessage = self.driver.find_element(By.XPATH, "//*[@id='login_button_container']/div/form/div[3]/h3")
+        assert errorMessage.text == "Epic sadface: Username and password do not match any user in this service"
         
     @pytest.mark.skip()
     def test_locked_login(self):
