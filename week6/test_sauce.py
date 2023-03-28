@@ -106,6 +106,7 @@ class Test_SauceDemo:
         self.driver.save_screenshot(f"{self.folderPath}/test-addToCart-{productName}.png")
         self.waitForElementVisible((By.ID, "finish"))
         self.driver.find_element(By.XPATH, "//*[@id='finish']").click()
+        self.waitForElementVisible((By.ID, "checkout_complete_container"))
         assert self.driver.find_element(By.XPATH, "//*[@id='checkout_complete_container']/h2").text == "Thank you for your order!"
         
     def test_setProductNameAndPriceToExcel(self):
