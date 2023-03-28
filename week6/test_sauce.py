@@ -132,15 +132,4 @@ class Test_SauceDemo:
         self.driver.find_element(By.XPATH, "//*[@id='logout_sidebar_link']").click()
         self.driver.save_screenshot(f"{self.folderPath}/test-logout.png")
         assert self.driver.current_url == constants.URL
-        
- 
-
-        
-
-        
-        
-
-        
-
-
 
